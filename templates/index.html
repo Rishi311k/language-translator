@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle">
+    <input type="checkbox" id="toggle">
+    <label for="toggle"></label>
+</div>
+
+<div class="app-container">
+    <h1>🌐 Language Translator</h1>
+
+    <div class="select-row">
+        <select>
+            <option>Auto Detect</option>
+            <option>Hindi</option>
+            <option>French</option>
+            <option>Spanish</option>
+        </select>
+
+        <select>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>French</option>
+            <option>Spanish</option>
+        </select>
+    </div>
+
+    <textarea placeholder="Enter text to translate..."></textarea>
+
+    <button>Translate</button>
+
+    <div class="output">
+        <p>Translated text will appear here...</p>
+    </div>
+</div>
+
+<script>
+    const toggle = document.getElementById("toggle");
+    toggle.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+    });
+</script>
+
+</body>
+</html>
+
+
